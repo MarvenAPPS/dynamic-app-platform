@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Logs
+*.log
+logs/
+data/logs/
+
+# Backups
+*.backup.*
+*.bak
+
+# Environment
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Build artifacts
+dist/
+build/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Session files
+data/sessions.json
+
+# Config backups
+data/config.backup.*.json

@@ -26,10 +26,20 @@ if (!is_dir($logDir)) {
     mkdir($logDir, 0755, true);
 }
 
+// Anonymize IP address (GDPR compliance)
+$ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+if ($ip !== 'unknown' && filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
+    // Mask last octet for IPv4
+    $ip = preg_replace('/\.\d+$/', '.0', $ip);
+} elseif ($ip !== 'unknown' && filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6)) {
+    // Mask last 80 bits for IPv6
+    $ip = preg_replace('/:[^:]+:[^:]+:[^:]+:[^:]+$/', '::0', $ip);
+}
+
 // Create log entry
 $logEntry = [
     'timestamp' => date('Y-m-d H:i:s'),
-    'ip' => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
+    'ip' => $ip,
     'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'unknown',
     'event' => $data['event'] ?? 'unknown',
     'session_id' => $data['session_id'] ?? 'unknown',

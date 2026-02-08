@@ -25,6 +25,14 @@ if (!isset($data['config'])) {
     exit;
 }
 
+// Basic validation of configuration structure
+$config = $data['config'];
+if (!isset($config['global']) || !isset($config['apps']) || !is_array($config['apps'])) {
+    http_response_code(400);
+    echo json_encode(['success' => false, 'error' => 'Invalid configuration structure']);
+    exit;
+}
+
 $configPath = __DIR__ . '/../../data/config.json';
 
 // Backup current config

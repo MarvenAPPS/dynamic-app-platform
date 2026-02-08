@@ -124,10 +124,26 @@ Tracked events:
 
 ## 🔒 Security Notes
 
-- The `data/` directory should NOT be publicly accessible
-- Configure `.htaccess` or server rules to protect sensitive files
-- In production, enable HTTPS
-- Implement proper admin authentication for configuration changes
+⚠️ **IMPORTANT**: This is an initial release with basic security implementations.
+
+**Before deploying to production:**
+
+1. **Change default admin credentials** in `public/auth.php`
+2. **Implement password hashing**: Use `password_hash()` and `password_verify()`
+3. **Add rate limiting**: Protect against brute-force attacks
+4. **Enable HTTPS**: Required for PWA and secure communications
+5. **Restrict data directory**: Ensure `data/` is NOT publicly accessible
+6. **Review custom functions**: Validate all user inputs in custom verification functions
+7. **Update CSP headers**: Configure Content Security Policy for your domain
+8. **Regular updates**: Keep PHP and dependencies updated
+
+See `PROJECT_PLAN.md` for detailed security implementation guidance.
+
+The current implementation includes:
+- IP anonymization in analytics (GDPR compliance)
+- Configuration validation before saving
+- Protected sensitive directories via `.htaccess`
+- Basic security headers
 
 ## 📱 PWA Setup
 

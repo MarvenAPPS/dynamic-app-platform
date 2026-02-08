@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dynamic App Platform - Get free gifts and rewards">
+    <meta name="theme-color" content="#4285f4">
+    <title>App Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="assets/icons/icon-192.png">
+</head>
+<body>
+    <div id="app">
+        <!-- View 1: App Drawer -->
+        <div id="drawer-view" class="view active">
+            <header>
+                <h1>Your Apps</h1>
+            </header>
+            <div id="apps-grid" class="apps-grid">
+                <!-- Apps will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- View 2: User Form -->
+        <div id="form-view" class="view">
+            <header>
+                <button id="back-btn" class="back-button">← Back</button>
+                <h2 id="app-title">App Name</h2>
+            </header>
+            <div class="form-container">
+                <form id="gift-form">
+                    <div class="form-group">
+                        <label for="username" id="username-label">Username/ID:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Gift:</label>
+                        <div id="gifts-container" class="gifts-container">
+                            <!-- Gift options will be dynamically loaded here -->
+                        </div>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn btn-primary" disabled>Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- View 3: Processing & Verification -->
+        <div id="processing-view" class="view">
+            <div class="processing-container">
+                <div id="loading-state" class="loading-state active">
+                    <div class="spinner"></div>
+                    <p id="loading-message">Processing...</p>
+                </div>
+                <div id="error-state" class="error-state">
+                    <div class="error-icon">⚠️</div>
+                    <h3>Too Much Traffic!</h3>
+                    <p id="error-message">Please complete manual verification to continue.</p>
+                    <button id="verify-btn" class="btn btn-verify">Verify Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="analytics.js"></script>
+    <script src="custom-functions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

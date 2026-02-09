@@ -3,7 +3,7 @@ h<?php
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-$configPath = __DIR__ . '/../../data/config.json';
+$configPath = __DIR__ . '/../data/config.json';
 
 
 

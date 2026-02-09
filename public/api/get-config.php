@@ -4,7 +4,8 @@ header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
 $configPath = __DIR__ . '../../../data/config.json';
-echo $configPath;
+
+
 
 if (!file_exists($configPath)) {
     echo json_encode([

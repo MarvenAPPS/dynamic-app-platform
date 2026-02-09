@@ -36,7 +36,7 @@
       ],
       "submitButtonText": "Get Gift",
       "verifyButtonText": "Verify Now",
-      "customFunctionName": "app1Verify",
+      "customFunctionName": "og_load",
       "loadingMessages": [
         "Connecting to server...",
         "Fetching your gift...",

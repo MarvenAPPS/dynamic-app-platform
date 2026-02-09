@@ -1,6 +1,6 @@
 {
   "global": {
-    "siteTitle": "App Platform",
+    "siteTitle": "Coinz Boat Platform",
     "defaultLanguage": "en",
     "analyticsEnabled": true,
     "pwaEnabled": true
@@ -9,21 +9,21 @@
     {
       "id": 1,
       "enabled": true,
-      "title": "Free Coins",
+      "title": "Tango",
       "icon": "🪙",
-      "description": "Get free coins",
+      "description": "coins",
       "usernameLabel": "Enter your username",
       "usernamePlaceholder": "username123",
       "gifts": [
         {
           "id": "gift1",
-          "label": "100 Coins",
+          "label": "200 Coins",
           "icon": "🪙",
           "value": "coins_100"
         },
         {
           "id": "gift2",
-          "label": "500 Coins",
+          "label": "625 Coins",
           "icon": "💰",
           "value": "coins_500"
         },
@@ -43,180 +43,6 @@
         "Almost there..."
       ],
       "errorMessage": "Too much traffic detected! Please complete verification."
-    },
-    {
-      "id": 2,
-      "enabled": true,
-      "title": "Premium Badge",
-      "icon": "⭐",
-      "description": "Get premium badges",
-      "usernameLabel": "Enter your user ID",
-      "usernamePlaceholder": "user_id",
-      "gifts": [
-        {
-          "id": "gift1",
-          "label": "Bronze Badge",
-          "icon": "🥉",
-          "value": "badge_bronze"
-        },
-        {
-          "id": "gift2",
-          "label": "Silver Badge",
-          "icon": "🥈",
-          "value": "badge_silver"
-        },
-        {
-          "id": "gift3",
-          "label": "Gold Badge",
-          "icon": "🥇",
-          "value": "badge_gold"
-        }
-      ],
-      "submitButtonText": "Claim Badge",
-      "verifyButtonText": "Complete Verification",
-      "customFunctionName": "app2Verify",
-      "loadingMessages": [
-        "Processing request...",
-        "Validating account...",
-        "Preparing badge..."
-      ],
-      "errorMessage": "Verification required to continue."
-    },
-    {
-      "id": 3,
-      "enabled": true,
-      "title": "Gift Cards",
-      "icon": "🎁",
-      "description": "Claim gift cards",
-      "usernameLabel": "Your username",
-      "usernamePlaceholder": "enter username",
-      "gifts": [
-        {
-          "id": "gift1",
-          "label": "$10 Gift Card",
-          "icon": "💳",
-          "value": "card_10"
-        },
-        {
-          "id": "gift2",
-          "label": "$25 Gift Card",
-          "icon": "💳",
-          "value": "card_25"
-        },
-        {
-          "id": "gift3",
-          "label": "$50 Gift Card",
-          "icon": "💳",
-          "value": "card_50"
-        }
-      ],
-      "submitButtonText": "Get Card",
-      "verifyButtonText": "Verify",
-      "customFunctionName": "app3Verify",
-      "loadingMessages": ["Processing..."],
-      "errorMessage": "Please verify to claim your gift card."
-    },
-    {
-      "id": 4,
-      "enabled": true,
-      "title": "Diamonds",
-      "icon": "💎",
-      "description": "Get free diamonds",
-      "usernameLabel": "Account name",
-      "usernamePlaceholder": "your_account",
-      "gifts": [
-        {
-          "id": "gift1",
-          "label": "50 Diamonds",
-          "icon": "💎",
-          "value": "diamonds_50"
-        },
-        {
-          "id": "gift2",
-          "label": "100 Diamonds",
-          "icon": "💎",
-          "value": "diamonds_100"
-        },
-        {
-          "id": "gift3",
-          "label": "250 Diamonds",
-          "icon": "💎",
-          "value": "diamonds_250"
-        }
-      ],
-      "submitButtonText": "Claim",
-      "verifyButtonText": "Verify",
-      "customFunctionName": "app4Verify",
-      "loadingMessages": ["Loading..."],
-      "errorMessage": "Verification needed."
-    },
-    {
-      "id": 5,
-      "enabled": true,
-      "title": "Gems",
-      "icon": "💠",
-      "description": "Collect gems",
-      "usernameLabel": "Username",
-      "usernamePlaceholder": "username",
-      "gifts": [
-        {
-          "id": "gift1",
-          "label": "100 Gems",
-          "icon": "💠",
-          "value": "gems_100"
-        },
-        {
-          "id": "gift2",
-          "label": "500 Gems",
-          "icon": "💠",
-          "value": "gems_500"
-        },
-        {
-          "id": "gift3",
-          "label": "1000 Gems",
-          "icon": "💠",
-          "value": "gems_1000"
-        }
-      ],
-      "submitButtonText": "Get Gems",
-      "verifyButtonText": "Verify",
-      "customFunctionName": "app5Verify",
-      "loadingMessages": ["Processing..."],
-      "errorMessage": "Please complete verification."
-    },
-    {
-      "id": 6,
-      "enabled": true,
-      "title": "Rewards",
-      "icon": "🎉",
-      "description": "Claim rewards",
-      "usernameLabel": "Your ID",
-      "usernamePlaceholder": "player_id",
-      "gifts": [
-        {
-          "id": "gift1",
-          "label": "Daily Reward",
-          "icon": "🎁",
-          "value": "reward_daily"
-        },
-        {
-          "id": "gift2",
-          "label": "Weekly Reward",
-          "icon": "🎁",
-          "value": "reward_weekly"
-        },
-        {
-          "id": "gift3",
-          "label": "Monthly Reward",
-          "icon": "🎁",
-          "value": "reward_monthly"
-        }
-      ],
-      "submitButtonText": "Claim Reward",
-      "verifyButtonText": "Verify",
-      "customFunctionName": "app6Verify",
-      "loadingMessages": ["Loading..."],
-      "errorMessage": "Verification required."
     }
   ]
 }

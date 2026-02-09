@@ -149,7 +149,7 @@ class AnalyticsTracker {
     // Send event to server
     async sendEvent(eventData) {
         try {
-            await fetch('/public/api/track.php', {
+            await fetch('/api/track.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

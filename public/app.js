@@ -28,7 +28,7 @@ class AppPlatform {
     async loadConfig() {
         try {
             // Try to load from API
-            const response = await fetch('/public/api/get-config.php');
+            const response = await fetch('/api/get-config.php?v=<?=time()?>');
             if (response.ok) {
                 const data = await response.json();
                 this.config = data.success ? data.data : this.getDefaultConfig();

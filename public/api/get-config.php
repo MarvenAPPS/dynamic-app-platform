@@ -1,4 +1,4 @@
-h<?php
+<?php
 // API: Get Configuration
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
